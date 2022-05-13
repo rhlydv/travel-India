@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html id="hih" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="icon" href="media/favvv.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .cardsglass {
+            display: grid;
+            grid-gap : 5%;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            margin: 5% 5% ;
+        }
+
+        .cardglass1 {
+            border-radius: 16px;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+                0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            background-image: url(media/golden.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cardglass2 {
+            border-radius: 16px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            min-height: 500px;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+                0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            background-image: url(media/Badrinath-Temple-1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cardglass3 {
+            border-radius: 16px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            min-height: 500px;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+                0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            background-image: url(media/Sun-Temple-Konark-Odisha.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .info {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-color: #fff;
+            transform: translateY(100%) translateY(-88px) translateZ(0);
+            transition: transform 0.5s ease-out;
+        }
+
+        .info:before {
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: ' ';
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
+            filter: blur(10px);
+            background-size: cover;
+            opacity: 0.25;
+            transform: translateY(-100%) translateY(88px) translateZ(0);
+            transition: transform 0.5s ease-out;
+        }
+
+        .cardglass1:hover .info,
+        .cardglass1:hover .info:before {
+            transform: translateY(0) translateZ(0);
+        }
+
+        .cardglass2:hover .info,
+        .cardglass2:hover .info:before {
+            transform: translateY(0) translateZ(0);
+        }
+
+        .cardglass3:hover .info,
+        .cardglass3:hover .info:before {
+            transform: translateY(0) translateZ(0);
+        }
+
+        .cardtitle {
+            margin: 0;
+            padding: 24px;
+            font-size: 40px;
+            line-height: 1;
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        .description {
+            margin: 0;
+            padding: 0 24px 24px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body id="det">
+
+    <nav>
+        <div class="logo">
+            EpicTrip
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a> </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <h1>Temples</h1>
+    </div>
+    <div class="cardsglass">
+        <div class="ele">
+            <div class='cardglass1'>
+
+                <div class='info'>
+                    <h1 class='cardtitle'>Golden Temple</h1>
+                    <p class='description'>The Golden Temple is a gurdwara located in the city of Amritsar, Punjab, India. It is the preeminent spiritual site of Sikhism. The man-made pool on the site of the temple was completed by the fourth Sikh Guru, Guru Ram Das, in 1577</p>
+                </div>
+            </div>
+        </div>
+        <div class="ele">
+            <div class='cardglass2'>
+                <div class='info'>
+                    <h1 class='cardtitle'>Badrinath Temple</h1>
+                    <p class='description'>Situated close to the Alaknanda River, the abode of Lord Badrinath is located in the Chamoli district of Uttarakhand. This holy shrine of Lord Vishnu is one of the Char Dhams of Hindu religion.
+
+                        It is also one of the four Chota Char Dham pilgrimage sites (comparatively minor pilgrimage sites). The temple is one of the 108 temples dedicated to Lord Vishnu (Divya Desams), which finds its mention in the works of Tamil saints who existed in the 6th to 9th century.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ele">
+
+            <div class='cardglass3'>
+                <div class='info'>
+                    <h1 class='cardtitle'>Sun Temple</h1>
+                    <p class='description'>The Sun temple is situated in the small town of Konark situated in the Puri district of Odisha. This marvel of architecture is dedicated to Indian God of Sun, Surya. The temple has been built in the shape of his chariot which is drawn by seven horses.
+
+                        The temple was built in the 13th century by a king called Narasimhadeva.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
